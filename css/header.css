@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    padding: 0 15px;
+}
+
+header .opciones{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .opciones a{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header .opciones .aOpcion:hover{
+    text-decoration: underline;
+}
+
+header .opciones .acceder{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ab4f8;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #202124;
+}
+
+header .opciones .socialmedia{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: .2rem solid transparent;
+    padding: 8px;
+}
+
+header .opciones .socialmedia ion-icon {
+    top: 5px;
+    left: 5px;
+    font-size: 1.3rem !important;
+}
+
+
+header .opciones .socialmedia:hover{
+    background-color: #c9c9c91e;
+    border-radius: 50%;
+}

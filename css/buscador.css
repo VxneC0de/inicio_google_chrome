@@ -1,0 +1,22 @@
+main{
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+
+main .container figure{
+    max-height: 92px;
+}
+
+main .container figure img{
+    height: 100%;
+}

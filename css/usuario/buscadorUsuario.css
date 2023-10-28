@@ -1,0 +1,122 @@
+main{
+    height: calc(100% - 60px - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 80%;
+}
+
+main .container figure{
+    max-height: 92px;
+}
+
+main .container figure img{
+    height: 100%;
+}
+
+main .container .buscador{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 2px 12px;
+    height: 40px;
+    width: 57%;
+    background-color: transparent;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+}
+
+.buscador-logo{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/assets/buscador-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.micro-logo{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/assets/micro-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.camara-logo{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/assets/camara-logo.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+main .container .buscador input{
+    width: 100%;
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    font-size: 17px;
+}
+
+main .container .buscador input:focus{
+    outline: none;
+}
+
+
+main .container .buscador input{
+    width: 100%;
+}
+
+main .container .buscador button{
+    background-color: transparent;
+    border: none;
+}
+
+
+.buscador-recientes{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.buscador-recientes a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.buscador-recientes a img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(26, 27, 27);
+    padding: 15px;
+}
+
+@media screen and (max-width: 930px){
+    main{
+        height: 100vh;
+    }
+
+    main .container .buscador{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    main .container .buscador{
+        width: 100%;
+    }
+}

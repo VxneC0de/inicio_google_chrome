@@ -10,6 +10,7 @@ main .container{
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    width: 80%;
 }
 
 
@@ -19,4 +20,80 @@ main .container figure{
 
 main .container figure img{
     height: 100%;
+}
+
+main .container .buscador{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 2px 12px;
+    height: 40px;
+    width: 57%;
+    background-color: transparent;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+}
+
+.buscador-logo{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/assets/buscador-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.micro-logo{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/assets/micro-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.camara-logo{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/assets/camara-logo.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+main .container .buscador input{
+    width: 100%;
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    font-size: 17px;
+}
+
+main .container .buscador input:focus{
+    outline: none;
+}
+
+
+main .container .buscador input{
+    width: 100%;
+}
+
+main .container .buscador button{
+    background-color: transparent;
+    border: none;
+}
+
+main .container .buscador-botones{
+    display: flex;
+    gap: 8px;
+}
+
+main .container .buscador-botones button{
+    border: none;
+    border-radius: 4px;
+    background-color: #303134;
+    padding: 12px;
+    color: whitesmoke;
+    cursor: pointer;
 }

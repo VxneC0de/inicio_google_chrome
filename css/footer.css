@@ -16,10 +16,10 @@ footer section{
 footer section.pais{
     padding-top: 5px;
     padding-bottom: 5px;
+    border-bottom: 0.5px solid #3c4043;
 }
 
 footer section.footer-info{
-    border-top: #3c4043 solid 1px;
     display: flex;
     justify-content: space-between;
 }
@@ -38,4 +38,45 @@ footer section.footer-info div a{
 footer section.footer-info div a:hover{
     text-decoration: underline;
 }
+
+.info-one{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 830px){
+
+    footer{
+        height: 30%;
+    }
+
+    footer section.pais{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    footer section.footer-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 520px){
+
+    footer section.footer-info div {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-one{
+        flex-wrap: wrap;
+    }
+
+}
+
 
